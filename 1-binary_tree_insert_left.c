@@ -24,10 +24,10 @@ return (NULL);
 }
 if (parent->left != NULL)
 {
-new->parent = parent;
 new->left = parent->left;
 parent->left->parent = new;
 }
+new->parent = parent;
 parent->left = new;
 new->n = value;
 
